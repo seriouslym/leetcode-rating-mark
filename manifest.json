@@ -1,0 +1,17 @@
+{
+  "name": "Leetcode Rating Mark",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Turns the page red when you click the icon",
+  "permissions": ["activeTab", "scripting"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://zerotrac.github.io/*"],
+      "js": ["service-worker.js"]
+    }
+  ]
+}
